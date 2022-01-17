@@ -60,6 +60,7 @@ public class fishTrigger : MonoBehaviour
         {
             //this code will only be used when the player is going back up again, and will be used to turn of the spawners.
             loopPreventer += 1;
+
         }
     }
 
