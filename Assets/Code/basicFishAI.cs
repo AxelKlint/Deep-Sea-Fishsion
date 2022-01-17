@@ -4,25 +4,27 @@ using UnityEngine;
 
 public class basicFishAI : MonoBehaviour
 {
-    [SerializeField]
-    public float fishPosition;
+    private float fishPosition;
+    int movement;
     // Start is called before the first frame update
     void Start()
     {
-        fishPosition = GameObject.Find(gameObject.name).transform.position.x;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if(fishPosition >= 7.9f)
+        fishPosition = GameObject.Find(gameObject.name).transform.position.x;
+        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime;
+
+        if (fishPosition >= 7.9f)
         {
-            transform.position += new Vector3(-16, 0, 0) * Time.deltaTime;
+            movement = -1;
         }
-        //if (fishPosition <= -7.9f)
+        if (fishPosition <= -7.9f)
         {
-            transform.position += new Vector3(16, 0, 0) * Time.deltaTime;
+            movement = 1;
         }
     }
 }
