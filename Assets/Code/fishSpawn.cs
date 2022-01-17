@@ -43,10 +43,10 @@ public class fishSpawn : MonoBehaviour
     {
         if (summonFish1 == true && doneSpawning == false)
         {
-            Instantiate(fish1, new Vector2(-10.5f, 0), Quaternion.identity);
-            Instantiate(fish2, new Vector2(10.5f, -2), Quaternion.identity);
-            Instantiate(fish3, new Vector2(-10.5f, -5), Quaternion.identity);
-            Instantiate(fish4, new Vector2(10.5f, -10), Quaternion.identity);
+            Instantiate(fish1, new Vector2(-8, 0), Quaternion.identity);
+            Instantiate(fish2, new Vector2(8, -2), Quaternion.identity);
+            Instantiate(fish3, new Vector2(-8, -5), Quaternion.identity);
+            Instantiate(fish4, new Vector2(8, -10), Quaternion.identity);
             doneSpawning = true;
         }
     }
