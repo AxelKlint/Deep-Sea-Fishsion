@@ -5,7 +5,7 @@ using UnityEngine;
 public class basicFishAI : MonoBehaviour
 {
     [SerializeField]
-    private static float fishPosition;
+    public float fishPosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +16,11 @@ public class basicFishAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(fishPosition >= 7.9f)
+        //if(fishPosition >= 7.9f)
         {
             transform.position += new Vector3(-16, 0, 0) * Time.deltaTime;
         }
-        if (fishPosition <= -7.9f)
+        //if (fishPosition <= -7.9f)
         {
             transform.position += new Vector3(16, 0, 0) * Time.deltaTime;
         }
