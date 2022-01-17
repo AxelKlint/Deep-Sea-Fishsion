@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5962176251543982774}
   - component: {fileID: 3690080364346357149}
+  - component: {fileID: 3981180048895671513}
   m_Layer: 0
   m_Name: testFIsh
   m_TagString: Untagged
@@ -82,3 +83,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3981180048895671513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621587353364827847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50e005a96180f9641811d5664c6e5158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

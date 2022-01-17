@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class basicFishAI : MonoBehaviour
 {
+    [SerializeField]
     private static float fishPosition;
     // Start is called before the first frame update
     void Start()
     {
-        fishPosition = GameObject.Find(name).transform.position.x;
+        fishPosition = GameObject.Find(gameObject.name).transform.position.x;
 
     }
 
