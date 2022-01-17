@@ -17,10 +17,14 @@ public class basicFishAI : MonoBehaviour
     {
         fishPosition = GameObject.Find(gameObject.name).transform.position.x;
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime;
+        transform.position += new Vector3(0, 0.1f, 0) * Time.deltaTime;
+        transform.position += new Vector3(0, -0.1f, 0) * Time.deltaTime;
+        transform.position += new Vector3(0, -0.1f, 0) * Time.deltaTime;
+        transform.position += new Vector3(0, 0.1f, 0) * Time.deltaTime;
 
         if (fishPosition >= 7.9f)
         {
-            movement = -1;
+            movement = -1;  
         }
         if (fishPosition <= -7.9f)
         {
