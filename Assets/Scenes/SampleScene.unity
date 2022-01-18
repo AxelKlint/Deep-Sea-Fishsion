@@ -123,6 +123,71 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &113756845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 149547959250962633, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 149547959250962633, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 149547959250962633, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 149547959250962633, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149547959250962633, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 149547959250962633, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149547959250962633, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149547959250962633, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149547959250962633, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149547959250962633, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149547959250962633, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 149547959250962634, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: m_Name
+      value: Krok Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 149547959250962635, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: Left
+      value: 97
+      objectReference: {fileID: 0}
+    - target: {fileID: 149547959250962635, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
+      propertyPath: Right
+      value: 100
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5668a9941e607e645b428a5d0434b3f0, type: 3}
 --- !u!1 &508349551
 GameObject:
   m_ObjectHideFlags: 0
