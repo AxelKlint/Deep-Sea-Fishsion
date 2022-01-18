@@ -6,12 +6,16 @@ public class HookMovement : MonoBehaviour
 {
     [SerializeField]   //Så man kan ändra keybinds i unity, så man kan röra kroken till höger - Leo
     KeyCode Right;
+
     [SerializeField]   //Så man kan ändra keybinds i unity, så man kan röra kroken till vänster - Leo
     KeyCode Left;
+
     [SerializeField, Range(1, 10)]   //Så man kan bestämma hur snabbt kroken rör sig i Unity - Leo
     float MovementSpeed;
-    [SerializeField, Range(1, 10)]   //Så man kan bestämma hur snabbt kroken sjunker i Unity - Leo
+
+    [SerializeField]   //Så man kan bestämma hur snabbt kroken sjunker i Unity - Leo
     float SinkSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +34,16 @@ public class HookMovement : MonoBehaviour
         if (Input.GetKey(Right))
         {
             transform.position += new Vector3(MovementSpeed, 0, 0) * Time.deltaTime;   //Kroken rör sig till höger - Leo
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Fish")  //Om kroken träffar en fisk - Leo
+        {
+            collision.transform.parent = gameObject.transform;
+            collision.gameObject.GetComponent<basicFishAI>().enabled = false;
+            SinkSpeed *= -5;  //Kroken ändrar rikting - Leo
         }
     }
 }
