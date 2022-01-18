@@ -36,25 +36,25 @@ public class basicFishAI : MonoBehaviour
         }
         if (yMovement == 0 && lastWasUp == true && timer >= 0.1f)
         {
-            yMovement += -0.5f;
+            yMovement += -0.5f - (speed / 20);
             lastWasUp = true;
             print("up");
             timer = 0;
         }
         if (yMovement == 0  && lastWasUp == false && timer >= 0.1f)
         {
-            yMovement += 0.5f;
+            yMovement += 0.5f + (speed / 20);
             print("down");
             timer = 0;
         }
-        if (yMovement == 0.5f && timer >= 0.1f)
+        if (yMovement == 0.5f - (speed / 20) && timer >= 0.1f)
         {
             yMovement = 0;
             lastWasUp = true;
             print("mid1");
             timer = 0;
         }
-        if (yMovement == -0.5f && timer >= 0.1f)
+        if (yMovement == -0.5f + (speed / 20) && timer >= 0.1f)
         {
             yMovement = 0;
             print("mid2");
