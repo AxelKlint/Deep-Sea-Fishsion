@@ -21,22 +21,6 @@ public class fishSpawn : MonoBehaviour
     [SerializeField]
     GameObject fish4;
     [SerializeField]
-    GameObject fish5;
-    [SerializeField]
-    GameObject fish6;
-    [SerializeField]
-    GameObject fish7;
-    [SerializeField]
-    GameObject fish8;
-    [SerializeField]
-    GameObject fish9;
-    [SerializeField]
-    GameObject fish10;
-    [SerializeField]
-    GameObject fish11;
-    [SerializeField]
-    GameObject fish12;
-    [SerializeField]
     GameObject crab;
     public static bool summonFish1;
     public static bool summonFish2;
@@ -59,33 +43,11 @@ public class fishSpawn : MonoBehaviour
     {
         if (summonFish1 == true && doneSpawning == false)
         {
-            Instantiate(fish1, new Vector2(-8, 0), Quaternion.identity);
-            Instantiate(fish2, new Vector2(8, -2), Quaternion.identity);
-            Instantiate(fish3, new Vector2(-8, -5), Quaternion.identity);
-            Instantiate(fish4, new Vector2(8, -10), Quaternion.identity);
+            Instantiate(fish1, new Vector2(-10.5f, 0), Quaternion.identity);
+            Instantiate(fish2, new Vector2(10.5f, -2), Quaternion.identity);
+            Instantiate(fish3, new Vector2(-10.5f, -5), Quaternion.identity);
+            Instantiate(fish4, new Vector2(10.5f, -10), Quaternion.identity);
             doneSpawning = true;
         }
-        if (summonFish2 == true && doneSpawning == false)
-        {
-            Instantiate(fish5, new Vector2(-8, 0), Quaternion.identity);
-            Instantiate(fish6, new Vector2(8, -2), Quaternion.identity);
-            Instantiate(fish7, new Vector2(-8, -5), Quaternion.identity);
-            Instantiate(fish8, new Vector2(8, -10), Quaternion.identity);
-            doneSpawning = true;
-        }
-        if (summonFish1 == true && doneSpawning == false)
-        {
-            Instantiate(fish9, new Vector2(-8, 0), Quaternion.identity);
-            Instantiate(fish10, new Vector2(8, -2), Quaternion.identity);
-            Instantiate(fish11, new Vector2(-8, -5), Quaternion.identity);
-            Instantiate(fish12, new Vector2(8, -10), Quaternion.identity);
-            doneSpawning = true;
-        }
-        if (summonFish1 == true && doneSpawning == false)
-        {
-            Instantiate(crab, new Vector2(0, 0), Quaternion.identity);
-            doneSpawning = true;
-        }
-
     }
 }
