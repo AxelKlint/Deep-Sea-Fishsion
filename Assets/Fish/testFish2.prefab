@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2078970947088779280}
   - component: {fileID: 543464088172858447}
   - component: {fileID: 5311180575353267863}
+  - component: {fileID: 7860145128175720603}
+  - component: {fileID: 4915508396670160905}
   m_Layer: 0
   m_Name: testFish2
   m_TagString: Fish
@@ -131,3 +133,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7860145128175720603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532301642071240989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e844a7d6112c90644beec28ad8eb9672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4915508396670160905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532301642071240989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87956438852d23c43833759f946a993e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
