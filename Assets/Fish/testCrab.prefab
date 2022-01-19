@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3489163215105635856}
   m_Layer: 0
   m_Name: testCrab
-  m_TagString: Fish
+  m_TagString: xLarge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
