@@ -31,15 +31,15 @@ public class basicFishAI : MonoBehaviour
         {
             movement = 1.5f + (speed / 15);
         }
-        if (lastWasUp == true && timer >= 0.1f)
+        if (lastWasUp == true && timer >= 0.25f)
         {
-            yMovement = -0.5f - (speed / 20);
+            yMovement = -0.3f - (speed / 20);
             lastWasUp = false;
             timer = 0;
         }
-        else if (lastWasUp == false && timer >= 0.1f)
+        else if (lastWasUp == false && timer >= 0.25f)
         {
-            yMovement = 0.5f + (speed / 20);
+            yMovement = 0.3f + (speed / 20);
             lastWasUp = true;
             timer = 0;
         }
