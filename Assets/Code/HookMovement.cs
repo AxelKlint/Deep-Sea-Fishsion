@@ -16,7 +16,7 @@ public class HookMovement : MonoBehaviour
     [SerializeField]   //Så man kan bestämma hur snabbt kroken sjunker i Unity - Leo
     float SinkSpeed;
 
-    bool hasFish = false;
+    public static bool hasFish = false;
 
     // Start is called before the first frame update
     void Start()
