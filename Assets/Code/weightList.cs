@@ -5,7 +5,7 @@ using UnityEngine;
 public class weightList : MonoBehaviour
 {
     [SerializeField]
-    public int testWeight;
+    public static int testWeight;
     public static int weight;
     //10 weight is the lightest and 1 is the heaviest
     // Start is called before the first frame update
@@ -29,7 +29,7 @@ public class weightList : MonoBehaviour
         }
         else
         {
-            weight = 5  ;
+            weight = 5;
         }
 
     }

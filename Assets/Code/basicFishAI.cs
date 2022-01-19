@@ -15,7 +15,7 @@ public class basicFishAI : MonoBehaviour
     void Start()
     {
         yMovement = 0;
-        yPosition = GameObject.Find(name).transform.position.y;
+        yPosition = transform.position.y;
         speed = weightList.weight / 5;
 
     }
@@ -24,7 +24,7 @@ public class basicFishAI : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        fishPosition = GameObject.Find(gameObject.name).transform.position.x;
+        fishPosition = transform.position.x;
         transform.position += new Vector3(movement, yMovement, 0) * Time.deltaTime;
         if (fishPosition >= 7.9f)
         {
@@ -34,33 +34,18 @@ public class basicFishAI : MonoBehaviour
         {
             movement = 1.5f - (speed / 10);
         }
-        if (yMovement == 0 && lastWasUp == true && timer >= 0.1f)
+        if (lastWasUp == true && timer >= 0.1f)
         {
-            yMovement += -0.5f - (speed / 20);
-            lastWasUp = true;
-            print("up");
+            yMovement = -0.5f - (speed / 20);
+            lastWasUp = false;           print("up");
             timer = 0;
         }
-        if (yMovement == 0  && lastWasUp == false && timer >= 0.1f)
+        else if (lastWasUp == false && timer >= 0.1f)
         {
-            yMovement += 0.5f + (speed / 20);
+            yMovement = 0.5f + (speed / 20);
             print("down");
-            timer = 0;
-        }
-        if (yMovement == 0.5f - (speed / 20) && timer >= 0.1f)
-        {
-            yMovement = 0;
             lastWasUp = true;
-            print("mid1");
             timer = 0;
-        }
-        if (yMovement == -0.5f + (speed / 20) && timer >= 0.1f)
-        {
-            yMovement = 0;
-            print("mid2");
-            lastWasUp = false;
-            timer = 0;
-
         }
     }
 }
