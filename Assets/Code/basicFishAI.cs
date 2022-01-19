@@ -25,11 +25,11 @@ public class basicFishAI : MonoBehaviour
         transform.position += new Vector3(movement, yMovement, 0) * Time.deltaTime;
         if (fishPosition >= 7.9f)
         {
-            movement = -1.5f - (speed / 15);  
+            movement = -1f - (speed / 15);  
         }
         if (fishPosition <= -7.9f)
         {
-            movement = 1.5f + (speed / 15);
+            movement = 1f + (speed / 15);
         }
         if (lastWasUp == true && timer >= 0.25f)
         {
