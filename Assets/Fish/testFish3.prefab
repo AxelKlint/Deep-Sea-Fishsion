@@ -12,10 +12,11 @@ GameObject:
   - component: {fileID: 1909652649089361190}
   - component: {fileID: 8737194314916353869}
   - component: {fileID: -8572431913671751675}
-  - component: {fileID: 87877625164783875}
+  - component: {fileID: -1111112926712930012}
+  - component: {fileID: 1010837574343783005}
   m_Layer: 0
   m_Name: testFish3
-  m_TagString: Large
+  m_TagString: Fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -132,7 +133,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &87877625164783875
+--- !u!114 &-1111112926712930012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,5 +143,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e844a7d6112c90644beec28ad8eb9672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1010837574343783005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5121997001040070052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87956438852d23c43833759f946a993e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
