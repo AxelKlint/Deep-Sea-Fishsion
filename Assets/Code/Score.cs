@@ -18,6 +18,6 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        scoretext.text = "Score" + (score + playscore).ToString();
+        scoretext.text = "Fishpoints " + (score + playscore).ToString();
     }
 }
