@@ -47,7 +47,7 @@ public class HookMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "xSmall" || collision.gameObject.tag == "Small" || collision.gameObject.tag == "Medium" || collision.gameObject.tag == "Large" && hasFish == false)  //Om kroken träffar en extra liten fisk - Leo
+        if (collision.gameObject.tag == "xSmall" || collision.gameObject.tag == "Small" || collision.gameObject.tag == "Medium" || collision.gameObject.tag == "Large" && hasFish == false)  //Om kroken träffar en fisk - Leo
         {
             collision.transform.parent = gameObject.transform;  //Gör fisken till en child av kroken, den slutar alltså röra sig - Leo 
             collision.gameObject.GetComponent<basicFishAI>().enabled = false;  //Stänger av fiskens rörelser - Leo
