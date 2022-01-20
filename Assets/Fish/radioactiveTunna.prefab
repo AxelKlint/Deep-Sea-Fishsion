@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1097355003910292191}
   - component: {fileID: 1097355003910292190}
   - component: {fileID: 1097355003910292184}
+  - component: {fileID: -3773677165956955864}
   m_Layer: 0
   m_Name: radioactiveTunna
   m_TagString: Untagged
@@ -102,3 +103,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-3773677165956955864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097355003910292189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87956438852d23c43833759f946a993e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
