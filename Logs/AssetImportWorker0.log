@@ -884,3 +884,132 @@ Received Import Request.
 Start importing Assets/Fish/goldFish.prefab using Guid(d58b0d80b7e3ca44fa2f6516884accdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7d908e87d9a4408792f363458002a83') in 0.004866 seconds 
   Import took 0.008310 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002769 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.064 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1065ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (874ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (297ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (340ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (223ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2090 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.9 MB.
+System memory in use after: 97.0 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2595.
+Total: 4.916200 ms (FindLiveObjects: 0.224700 ms CreateObjectMapping: 0.088800 ms MarkObjects: 4.553400 ms  DeleteObjects: 0.047700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 81.024100 seconds.
+  path: Assets/Fish/fiskekrok-1.png (1).png
+  artifactKey: Guid(990d377d478bbb449aa1c1f5e02e4b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fish/fiskekrok-1.png (1).png using Guid(990d377d478bbb449aa1c1f5e02e4b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abb22859637f4d8ca5bbee9ac3856a8f') in 0.067953 seconds 
+  Import took 0.073030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000465 seconds.
+  path: Assets/Fish/fiskekrok-1.png (1).prefab
+  artifactKey: Guid(f6bbfef4ad73aa646ab5db5410643a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fish/fiskekrok-1.png (1).prefab using Guid(f6bbfef4ad73aa646ab5db5410643a23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10aee769a3d521a14a044e07b7106ed6') in 0.043285 seconds 
+  Import took 0.047067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.407217 seconds.
+  path: Assets/Fish/fitch.prefab
+  artifactKey: Guid(1556ede05e2fc6640be8723e0892d654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fish/fitch.prefab using Guid(1556ede05e2fc6640be8723e0892d654) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f96e6a784179d52d530d7c94fe8ef387') in 0.018178 seconds 
+  Import took 0.025213 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.235865 seconds.
+  path: Assets/Fish/krrobb.prefab
+  artifactKey: Guid(d46f6327905b98944a5b7b48e75da466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fish/krrobb.prefab using Guid(d46f6327905b98944a5b7b48e75da466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a665affd9fdf3aa00d1f6763785b9d38') in 0.020371 seconds 
+  Import took 0.026147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.676472 seconds.
+  path: Assets/Fish/gadda.prefab
+  artifactKey: Guid(5aaa794f6091c8d429c51a547f38ef89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fish/gadda.prefab using Guid(5aaa794f6091c8d429c51a547f38ef89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4466ce0cf3421268bd98c5fa1278456f') in 0.019556 seconds 
+  Import took 0.023971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.341121 seconds.
+  path: Assets/animations/goldfish/goldFishBack.anim
+  artifactKey: Guid(400bac5f21792094f9659fe2fc88102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/goldfish/goldFishBack.anim using Guid(400bac5f21792094f9659fe2fc88102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4198e3f7bd7af183906f97e6ee0a44c') in 0.008049 seconds 
+  Import took 0.012382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002003 seconds.
+  path: Assets/animations/goldfish/goldFishBack.anim
+  artifactKey: Guid(400bac5f21792094f9659fe2fc88102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/goldfish/goldFishBack.anim using Guid(400bac5f21792094f9659fe2fc88102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4198e3f7bd7af183906f97e6ee0a44c') in 0.003762 seconds 
+  Import took 0.007391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.881679 seconds.
+  path: Assets/animations/Fitch
+  artifactKey: Guid(863654fcc44c0b34dbde17598bf9d5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/Fitch using Guid(863654fcc44c0b34dbde17598bf9d5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12aa7ddf52fdf56aef1f255ae6d0db2b') in 0.007989 seconds 
+  Import took 0.012518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.849578 seconds.
+  path: Assets/animations/Fitch
+  artifactKey: Guid(863654fcc44c0b34dbde17598bf9d5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/animations/Fitch using Guid(863654fcc44c0b34dbde17598bf9d5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12aa7ddf52fdf56aef1f255ae6d0db2b') in 0.004199 seconds 
+  Import took 0.009799 seconds .
+
