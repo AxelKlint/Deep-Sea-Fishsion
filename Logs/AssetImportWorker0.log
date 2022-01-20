@@ -3530,3 +3530,109 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002017 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.823 seconds
+Domain Reload Profiling:
+	ReloadAssembly (823ms)
+		BeginReloadAssembly (104ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (655ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (242ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (228ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (152ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2091 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.6 MB.
+System memory in use after: 97.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2721.
+Total: 2.627800 ms (FindLiveObjects: 0.165600 ms CreateObjectMapping: 0.043900 ms MarkObjects: 2.400400 ms  DeleteObjects: 0.016800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 421.143627 seconds.
+  path: Assets/Fish/krrobb.prefab
+  artifactKey: Guid(d46f6327905b98944a5b7b48e75da466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fish/krrobb.prefab using Guid(d46f6327905b98944a5b7b48e75da466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c009ef45addae561ad28fbefe8477242') in 0.046653 seconds 
+  Import took 0.049597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/Fish/kalimari.prefab
+  artifactKey: Guid(e0ba126db0ceb2140aeb118f804716f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fish/kalimari.prefab using Guid(e0ba126db0ceb2140aeb118f804716f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67650f842a03b8ef3495f43e2e471cee') in 0.022926 seconds 
+  Import took 0.026485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Fish/radioactiveTunna.prefab
+  artifactKey: Guid(2e2cba67b51550a4b8f06d4f2ba01d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fish/radioactiveTunna.prefab using Guid(2e2cba67b51550a4b8f06d4f2ba01d44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b1e50eb0383b3d5580b95c75fd53331') in 0.021010 seconds 
+  Import took 0.025033 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Fish/cookieCutterShark.prefab
+  artifactKey: Guid(aba17ede207ee4a4b80bf8a4a3c369fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fish/cookieCutterShark.prefab using Guid(aba17ede207ee4a4b80bf8a4a3c369fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7978659c76194181b7f4fafc9664748') in 0.019227 seconds 
+  Import took 0.022829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Fish/eyeFish.prefab
+  artifactKey: Guid(085374c41f7b3704dab5fb1fd467a540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fish/eyeFish.prefab using Guid(085374c41f7b3704dab5fb1fd467a540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c052915ed80071f3239a6ce76404b07f') in 0.016150 seconds 
+  Import took 0.019144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000565 seconds.
+  path: Assets/Fish/sealThing.prefab
+  artifactKey: Guid(6dc4b995887ff6946ab9853674265258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fish/sealThing.prefab using Guid(6dc4b995887ff6946ab9853674265258) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c08b5473bf678df7e0e255e6e3010740') in 0.018383 seconds 
+  Import took 0.021733 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
