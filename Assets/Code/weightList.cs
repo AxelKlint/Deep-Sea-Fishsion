@@ -17,7 +17,7 @@ public class weightList : MonoBehaviour
         }
         else if (this.gameObject.name == "gadda(Clone)")
         {
-            weight = 10;
+            weight = 4;
         }
         else if (this.gameObject.name == "fitch(Clone)")
         {
@@ -29,27 +29,27 @@ public class weightList : MonoBehaviour
         }
         else if (this.gameObject.name == "radioactiveTuna(Clone)")
         {
-            weight = 9;
+            weight = 4;
         }
         else if (this.gameObject.name == "eyeFish(Clone)")
         {
-            weight = 9;
+            weight = 8;
         }
         else if (this.gameObject.name == "cookieCutterShark(Clone)")
         {
-            weight = 9;
+            weight = 6;
         }
-        else if (this.gameObject.name == "sealThingr(Clone)")
+        else if (this.gameObject.name == "sealThing(Clone)")
         {
-            weight = 9;
+            weight = 6;
         }
-        else if (this.gameObject.name == "fitch(Clone)")
+        else if (this.gameObject.name == "calimary(Clone)")
         {
-            weight = 9;
+            weight = 8;
         }
-        else if (this.gameObject.name == "fitch(Clone)")
+        else if (this.gameObject.name == "eelerfish(Clone)")
         {
-            weight = 9;
+            weight = 6;
         }
         else if (this.gameObject.name == "Krrabb")
         {
