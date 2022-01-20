@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Fish
+  - xSmall
+  - Small
+  - Medium
+  - Large
+  - xLarge
   layers:
   - Default
   - TransparentFX
