@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 142526619123801263}
   m_Layer: 0
   m_Name: fitch
-  m_TagString: Small
+  m_TagString: xSmall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
