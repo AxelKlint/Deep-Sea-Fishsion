@@ -963,15 +963,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fish1: {fileID: 6213236071695732120, guid: d58b0d80b7e3ca44fa2f6516884accdf, type: 3}
-  fish2: {fileID: 1532301642071240989, guid: 1556ede05e2fc6640be8723e0892d654, type: 3}
-  fish3: {fileID: 6681002348229338644, guid: 54aca34ab66488d48b950afeed422ea7, type: 3}
-  fish4: {fileID: 7029636524359835722, guid: aba17ede207ee4a4b80bf8a4a3c369fd, type: 3}
-  fish5: {fileID: 6876935665639461529, guid: 085374c41f7b3704dab5fb1fd467a540, type: 3}
-  fish6: {fileID: 5121997001040070052, guid: 5aaa794f6091c8d429c51a547f38ef89, type: 3}
-  fish7: {fileID: 6681002348229338644, guid: 54aca34ab66488d48b950afeed422ea7, type: 3}
-  fish8: {fileID: 8544380859143760353, guid: e0ba126db0ceb2140aeb118f804716f9, type: 3}
-  fish9: {fileID: 3017434237096385849, guid: 6dc4b995887ff6946ab9853674265258, type: 3}
-  fish10: {fileID: 1097355003910292189, guid: 2e2cba67b51550a4b8f06d4f2ba01d44, type: 3}
+  fish2: {fileID: 6681002348229338644, guid: 54aca34ab66488d48b950afeed422ea7, type: 3}
+  fish3: {fileID: 1532301642071240989, guid: 1556ede05e2fc6640be8723e0892d654, type: 3}
+  fish4: {fileID: 5121997001040070052, guid: 5aaa794f6091c8d429c51a547f38ef89, type: 3}
+  fish5: {fileID: 7029636524359835722, guid: aba17ede207ee4a4b80bf8a4a3c369fd, type: 3}
+  fish6: {fileID: 6876935665639461529, guid: 085374c41f7b3704dab5fb1fd467a540, type: 3}
+  fish7: {fileID: 8544380859143760353, guid: e0ba126db0ceb2140aeb118f804716f9, type: 3}
+  fish8: {fileID: 2715135588303793289, guid: ecd05511680ab6a49925010e96268d01, type: 3}
+  fish9: {fileID: 1097355003910292189, guid: 2e2cba67b51550a4b8f06d4f2ba01d44, type: 3}
+  fish10: {fileID: 3017434237096385849, guid: 6dc4b995887ff6946ab9853674265258, type: 3}
   crab: {fileID: 3115891491953164272, guid: d46f6327905b98944a5b7b48e75da466, type: 3}
 --- !u!212 &863930109
 SpriteRenderer:
