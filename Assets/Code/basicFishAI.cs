@@ -19,11 +19,13 @@ public class basicFishAI : MonoBehaviour
     bool lastWasUp;
     private float timer;
     private int rand;
+    private bool running;
     // Start is called before the first frame update
     void Start()
     {
         speed = weightList.weight; //Gathers the weight from the Weight List so different speeds can be automated.
         fishPosition = transform.position.x; //
+        running = false;
     }
 
     // Update is called once per frame
@@ -32,13 +34,15 @@ public class basicFishAI : MonoBehaviour
         timer += Time.deltaTime;
         fishPosition = GameObject.Find(gameObject.name).transform.position.x;
         transform.position += new Vector3(movement, yMovement, 0) * Time.deltaTime;
-        if (fishPosition >= 8 && HookMovement.hasFish == false)
+        if (fishPosition >= 8 && running == false)
         {
             movement = -1f - (speed / 15);
+            gameObject.transform.localScale = new Vector3(-1, 1, 0);
         }
-        if (fishPosition <= -8 && HookMovement.hasFish == false)
+        if (fishPosition <= -8 && running == false)
         {
             movement = 1f + (speed / 15);
+            gameObject.transform.localScale = new Vector3(1, 1, 0);
         }
         if (lastWasUp == true && timer >= 0.25f)
         {
@@ -57,10 +61,14 @@ public class basicFishAI : MonoBehaviour
             if (transform.position.x >= 0)
             {
                 movement = 1.2f + (speed / 15);
+                gameObject.transform.localScale = new Vector3(1, 1, 0);
+                running = true;
             }
             else if (transform.position.x <= 0)
             {
                 movement = -1.2f - (speed / 15);
+                gameObject.transform.localScale = new Vector3(-1, 1, 0);
+                running = true;
             }
             else if (transform.position.x == 0)
             {
@@ -68,11 +76,14 @@ public class basicFishAI : MonoBehaviour
                 if (rand == 1)
                 {
                     movement = 1.2f + (speed / 15);
+                    gameObject.transform.localScale = new Vector3(1, 1, 0);
+                    running = true;
                 }
                 else
                 {
                     movement = -1.2f - (speed / 15);
-
+                    gameObject.transform.localScale = new Vector3(-1, 1, 0);
+                    running = true;
                 }
             }
         }

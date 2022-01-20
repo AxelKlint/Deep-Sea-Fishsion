@@ -21,6 +21,18 @@ public class fishSpawn : MonoBehaviour
     [SerializeField]
     GameObject fish4;
     [SerializeField]
+    GameObject fish5;
+    [SerializeField]
+    GameObject fish6;
+    [SerializeField]
+    GameObject fish7;
+    [SerializeField]
+    GameObject fish8;
+    [SerializeField]
+    GameObject fish9;
+    [SerializeField]
+    GameObject fish10;
+    [SerializeField]
     GameObject crab;
     public static bool summonFish1;
     public static bool summonFish2;
@@ -36,6 +48,7 @@ public class fishSpawn : MonoBehaviour
         summonFish3 = false;
         summonCrab = false;
         doneSpawning = false;
+
     }
 
     // Update is called once per frame
@@ -46,8 +59,29 @@ public class fishSpawn : MonoBehaviour
             Instantiate(fish1, new Vector2(-10.5f, 0), Quaternion.identity);
             Instantiate(fish2, new Vector2(10.5f, -2), Quaternion.identity);
             Instantiate(fish3, new Vector2(-10.5f, -5), Quaternion.identity);
-            Instantiate(fish4, new Vector2(10.5f, -10), Quaternion.identity);
             doneSpawning = true;
         }
+        if (summonFish2 == true && doneSpawning == false)
+        {
+            Instantiate(fish4, new Vector2(10.5f, -10), Quaternion.identity);
+            Instantiate(fish5, new Vector2(10.5f, -2), Quaternion.identity);
+            Instantiate(fish6, new Vector2(-10.5f, -5), Quaternion.identity);
+            Instantiate(fish7, new Vector2(-10.5f, -5), Quaternion.identity);
+            doneSpawning = true;
+        }
+        if (summonFish3 == true && doneSpawning == false)
+        {
+            Instantiate(fish8, new Vector2(-10.5f, 0), Quaternion.identity);
+            Instantiate(fish9, new Vector2(10.5f, -2), Quaternion.identity);
+            Instantiate(fish10, new Vector2(-10.5f, -5), Quaternion.identity);
+            doneSpawning = true;
+        }
+        if (summonCrab == true && doneSpawning == false)
+        {
+            Instantiate(crab, new Vector2(-10.5f, -5), Quaternion.identity);
+            doneSpawning = true;
+        }
+
+
     }
 }

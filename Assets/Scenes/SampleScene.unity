@@ -555,7 +555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d0bb0e2c64a8934db6d0dbf9b158ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fish1: {fileID: 621587353364827847, guid: ae9c984af463fba4eaadaf539f71b6b9, type: 3}
+  fish1: {fileID: 0}
   fish2: {fileID: 1532301642071240989, guid: 1556ede05e2fc6640be8723e0892d654, type: 3}
   fish3: {fileID: 5121997001040070052, guid: 5aaa794f6091c8d429c51a547f38ef89, type: 3}
   fish4: {fileID: 6681002348229338644, guid: 54aca34ab66488d48b950afeed422ea7, type: 3}
