@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -8724206279162373893}
   m_Layer: 0
   m_Name: gadda
-  m_TagString: Small
+  m_TagString: Large
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

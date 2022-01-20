@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3907847199153736009}
   - component: {fileID: 3907847199153736010}
   - component: {fileID: 3907847199153736011}
+  - component: {fileID: 5577639602888259571}
   m_Layer: 0
   m_Name: fiskekrok-1.png (1)
   m_TagString: Player
@@ -148,3 +149,15 @@ MonoBehaviour:
   Left: 97
   MovementSpeed: 5
   SinkSpeed: 1
+--- !u!114 &5577639602888259571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3907847199153736012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e9973d0d842a246b08cba17c2b669a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
