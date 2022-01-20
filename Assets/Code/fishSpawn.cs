@@ -71,6 +71,10 @@ public class fishSpawn : MonoBehaviour
             Instantiate(fish1, new Vector2(xSpawn, Random.Range(-5, -25)), Quaternion.identity);
             Instantiate(fish2, new Vector2(xSpawn, Random.Range(-5, -25)), Quaternion.identity);
             Instantiate(fish3, new Vector2(xSpawn, Random.Range(-5, -25)), Quaternion.identity);
+            Instantiate(fish2, new Vector2(xSpawn, Random.Range(-5, -25)), Quaternion.identity);
+            Instantiate(fish3, new Vector2(xSpawn, Random.Range(-5, -25)), Quaternion.identity);
+            Instantiate(fish2, new Vector2(xSpawn, Random.Range(-5, -25)), Quaternion.identity);
+            Instantiate(fish3, new Vector2(xSpawn, Random.Range(-5, -25)), Quaternion.identity);
             doneSpawning = true;
         }
         else if (summonFish2 == true && doneSpawning == false)
