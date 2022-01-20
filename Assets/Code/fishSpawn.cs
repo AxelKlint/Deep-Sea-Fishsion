@@ -39,7 +39,8 @@ public class fishSpawn : MonoBehaviour
     public static bool summonFish3;
     public static bool summonCrab;
     public static bool doneSpawning;
-
+    private static int rand;
+    private static float xSpawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,31 +55,42 @@ public class fishSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        rand = Random.Range(1, 2);
+        if (rand == 1)
+        {
+            xSpawn = -10.5f;
+        }
+        else
+        {
+            xSpawn = 10.5f;
+        }
         if (summonFish1 == true && doneSpawning == false)
         {
-            Instantiate(fish1, new Vector2(-10.5f, 0), Quaternion.identity);
-            Instantiate(fish2, new Vector2(10.5f, -2), Quaternion.identity);
-            Instantiate(fish3, new Vector2(-10.5f, -5), Quaternion.identity);
+            Instantiate(fish1, new Vector2(xSpawn, Random.Range(-5, -25)), Quaternion.identity);
+            Instantiate(fish1, new Vector2(xSpawn, Random.Range(-5, -25)), Quaternion.identity);
+            Instantiate(fish1, new Vector2(xSpawn, Random.Range(-5, -25)), Quaternion.identity);
+            Instantiate(fish2, new Vector2(xSpawn, Random.Range(-5, -25)), Quaternion.identity);
+            Instantiate(fish3, new Vector2(xSpawn, -Random.Range(-5, -25)), Quaternion.identity);
             doneSpawning = true;
         }
-        if (summonFish2 == true && doneSpawning == false)
+        else if (summonFish2 == true && doneSpawning == false)
         {
-            Instantiate(fish4, new Vector2(10.5f, -10), Quaternion.identity);
-            Instantiate(fish5, new Vector2(10.5f, -2), Quaternion.identity);
-            Instantiate(fish6, new Vector2(-10.5f, -5), Quaternion.identity);
-            Instantiate(fish7, new Vector2(-10.5f, -5), Quaternion.identity);
+            Instantiate(fish4, new Vector2(xSpawn, Random.Range(-25, -40)), Quaternion.identity);
+            Instantiate(fish5, new Vector2(xSpawn, Random.Range(-25, -40)), Quaternion.identity);
+            Instantiate(fish6, new Vector2(xSpawn, Random.Range(-25, -40)), Quaternion.identity);
+            Instantiate(fish7, new Vector2(xSpawn, Random.Range(-25, -40)), Quaternion.identity);
             doneSpawning = true;
         }
-        if (summonFish3 == true && doneSpawning == false)
+        else if (summonFish3 == true && doneSpawning == false)
         {
-            Instantiate(fish8, new Vector2(-10.5f, 0), Quaternion.identity);
-            Instantiate(fish9, new Vector2(10.5f, -2), Quaternion.identity);
-            Instantiate(fish10, new Vector2(-10.5f, -5), Quaternion.identity);
+            Instantiate(fish8, new Vector2(xSpawn, Random.Range(-40, -70)), Quaternion.identity);
+            Instantiate(fish9, new Vector2(xSpawn, Random.Range(-40, -70)), Quaternion.identity);
+            Instantiate(fish10, new Vector2(xSpawn, Random.Range(-40, -70)), Quaternion.identity);
             doneSpawning = true;
         }
-        if (summonCrab == true && doneSpawning == false)
+        else if (summonCrab == true && doneSpawning == false)
         {
-            Instantiate(crab, new Vector2(-10.5f, -5), Quaternion.identity);
+            Instantiate(crab, new Vector2(0, -80), Quaternion.identity);
             doneSpawning = true;
         }
 
