@@ -87,5 +87,13 @@ public class basicFishAI : MonoBehaviour
                 }
             }
         }
+        
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Small" || collision.gameObject.tag == "xSmall" || collision.gameObject.tag == "Medium" || collision.gameObject.tag == "Large" || collision.gameObject.tag == "xLarge")
+        {
+            transform.position += new Vector3(0, Random.Range(-2, 2), 0);
+        }
     }
 }
