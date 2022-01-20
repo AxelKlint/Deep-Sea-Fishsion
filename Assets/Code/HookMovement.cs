@@ -45,23 +45,33 @@ public class HookMovement : MonoBehaviour
         }
     }
 
+  
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "xSmall" || collision.gameObject.tag == "Small" || collision.gameObject.tag == "Medium" || collision.gameObject.tag == "Large" && hasFish == false)  //Om kroken träffar en fisk - Leo
+        if (collision.gameObject.tag == "xSmall" && hasFish == false || collision.gameObject.tag == "Small" && hasFish == false || collision.gameObject.tag == "Medium" && hasFish == false || collision.gameObject.tag == "Large" && hasFish == false)  //Om kroken träffar en fisk - Leo
         {
             collision.transform.parent = gameObject.transform;  //Gör fisken till en child av kroken, den slutar alltså röra sig - Leo 
             collision.gameObject.GetComponent<basicFishAI>().enabled = false;  //Stänger av fiskens rörelser - Leo
             collision.transform.localPosition = new Vector3 (0, -5.1f, 0);
-            SinkSpeed *= -5;  //Kroken ändrar rikting - Leo
+            SinkSpeed = -5;  //Kroken ändrar rikting - Leo
             hasFish = true;
         }
 
         if (collision.gameObject.tag == "xLarge")  //Om kroken träffar en extra stor fisk - Leo
         {
             ///Koden för krob ska vara här
-            collision.transform.parent = gameObject.transform;  //Gör fisken till en child av kroken, den slutar alltså röra sig - Leo 
+           
             collision.gameObject.GetComponent<basicFishAI>().enabled = false;  //Stänger av fiskens rörelser - Leo
-            SinkSpeed *= -5;  //Kroken ändrar rikting - Leo
+            StartCoroutine(StunHook());
         }
+    }
+
+    IEnumerator StunHook()
+    {
+        
+        SinkSpeed = -8;
+        yield return  new WaitForSeconds(1.5f);
+        SinkSpeed = 1;
     }
 }

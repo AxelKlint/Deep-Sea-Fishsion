@@ -922,6 +922,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &986611789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3907847199153736012, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+  m_PrefabInstance: {fileID: 3907847199365210671}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &986611794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986611789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e9973d0d842a246b08cba17c2b669a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1033672722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,6 +1680,7 @@ GameObject:
   - component: {fileID: 149547959330346723}
   - component: {fileID: 7557856972529102108}
   - component: {fileID: 6268555965865246015}
+  - component: {fileID: 149547959330346724}
   m_Layer: 0
   m_Name: Krok Test
   m_TagString: Player
@@ -1686,6 +1704,18 @@ MonoBehaviour:
   Left: 276
   MovementSpeed: 5
   SinkSpeed: 1
+--- !u!114 &149547959330346724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149547959330346722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e9973d0d842a246b08cba17c2b669a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &3296806374728455696
 RectTransform:
   m_ObjectHideFlags: 0
