@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &347827048 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3907847199153736007, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+  m_PrefabInstance: {fileID: 3907847199365210671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &373655668
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,9 +286,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8938c1ec24499f74296b2f244d78d924, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hook: {fileID: 149547959330346721}
+  hook: {fileID: 347827048}
   smoothSpeed: 0.125
-  offset: {x: 0, y: 0, z: -2.72}
+  offset: {x: 0, y: -5.12, z: -2.72}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -550,7 +555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d0bb0e2c64a8934db6d0dbf9b158ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fish1: {fileID: 621587353364827847, guid: ae9c984af463fba4eaadaf539f71b6b9, type: 3}
+  fish1: {fileID: 0}
   fish2: {fileID: 1532301642071240989, guid: 1556ede05e2fc6640be8723e0892d654, type: 3}
   fish3: {fileID: 5121997001040070052, guid: 5aaa794f6091c8d429c51a547f38ef89, type: 3}
   fish4: {fileID: 6681002348229338644, guid: 54aca34ab66488d48b950afeed422ea7, type: 3}
@@ -1070,7 +1075,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149547959330346722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: -12.08, y: 0.55, z: 0}
   m_LocalScale: {x: 0.2871, y: 0.5755, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1103,7 +1108,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 149547959330346722}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ed52096391f821499d4a6c5d2fd0842, type: 3}
   m_Name: 
@@ -1583,6 +1588,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95a3e4c429caf7c4fa7014145a6d765b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &3907847199365210671
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3907847199153736007, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736007, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736007, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736007, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736007, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736007, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736007, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736007, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736007, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736007, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736007, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736012, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: m_Name
+      value: fiskekrok-1.png (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
 --- !u!50 &6268555965865246015
 Rigidbody2D:
   serializedVersion: 4

@@ -30,7 +30,7 @@ public class HookMovement : MonoBehaviour
         if (transform.position.y > 0)  //Om kroken kommer över Y 0 - Leo
         {
             hasFish = false;
-            Destroy(transform.GetChild(0));
+            Destroy(transform.GetChild(0).gameObject);
             SinkSpeed = 1;
         }
         transform.position -= new Vector3(0, SinkSpeed, 0) * Time.deltaTime; //Kroken sjunker - Leo 
@@ -51,6 +51,7 @@ public class HookMovement : MonoBehaviour
         {
             collision.transform.parent = gameObject.transform;  //Gör fisken till en child av kroken, den slutar alltså röra sig - Leo 
             collision.gameObject.GetComponent<basicFishAI>().enabled = false;  //Stänger av fiskens rörelser - Leo
+            collision.transform.localPosition = new Vector3 (0, -5.1f, 0);
             SinkSpeed *= -5;  //Kroken ändrar rikting - Leo
             hasFish = true;
         }

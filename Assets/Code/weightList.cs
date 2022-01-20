@@ -15,11 +15,39 @@ public class weightList : MonoBehaviour
         {
             weight = 8;
         }
-        else if (this.gameObject.name == "xSmallFish")
+        else if (this.gameObject.name == "gadda(Clone)")
         {
             weight = 10;
         }
-        else if (this.gameObject.name == "xSmallFish2")
+        else if (this.gameObject.name == "fitch(Clone)")
+        {
+            weight = 9;
+        }
+        else if (this.gameObject.name == "nebu(Clone)")
+        {
+            weight = 9;
+        }
+        else if (this.gameObject.name == "radioactiveTuna(Clone)")
+        {
+            weight = 9;
+        }
+        else if (this.gameObject.name == "eyeFish(Clone)")
+        {
+            weight = 9;
+        }
+        else if (this.gameObject.name == "cookieCutterShark(Clone)")
+        {
+            weight = 9;
+        }
+        else if (this.gameObject.name == "sealThingr(Clone)")
+        {
+            weight = 9;
+        }
+        else if (this.gameObject.name == "fitch(Clone)")
+        {
+            weight = 9;
+        }
+        else if (this.gameObject.name == "fitch(Clone)")
         {
             weight = 9;
         }
