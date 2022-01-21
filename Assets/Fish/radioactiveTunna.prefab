@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: -3773677165956955864}
   - component: {fileID: 6200933164577087424}
   - component: {fileID: 5244597025024107695}
+  - component: {fileID: 6948271175283874504}
+  - component: {fileID: -4169214700427239036}
   m_Layer: 0
   m_Name: radioactiveTunna
   m_TagString: Large
@@ -164,3 +166,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.3210096, y: 2.00095}
   m_EdgeRadius: 0
+--- !u!114 &6948271175283874504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097355003910292189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87956438852d23c43833759f946a993e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-4169214700427239036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097355003910292189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e844a7d6112c90644beec28ad8eb9672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

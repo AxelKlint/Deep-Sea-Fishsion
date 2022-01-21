@@ -35,6 +35,7 @@ public class HookMovement : MonoBehaviour
             transform.position = new Vector2(0, 0);
         }
         transform.position -= new Vector3(0, SinkSpeed, 0) * Time.deltaTime; //Kroken sjunker - Leo 
+        
 
         if (Input.GetKey(Left))
         {
@@ -65,6 +66,11 @@ public class HookMovement : MonoBehaviour
            
             collision.gameObject.GetComponent<basicFishAI>().enabled = false;  //Stänger av fiskens rörelser - Leo
             StartCoroutine(StunHook());
+        }
+
+        if (collision.gameObject.tag == "Bottom")
+        {
+            SinkSpeed = -5;
         }
     }
 
