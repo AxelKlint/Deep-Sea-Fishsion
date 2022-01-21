@@ -128,10 +128,10 @@ public class fishSpawn : MonoBehaviour
             Instantiate(fish10, new Vector2(xSpawn, Random.Range(-45, -75)), Quaternion.identity);
             doneSpawning = true;
         }
-        else if (summonCrab == true && doneSpawning == false)
+        //else if (summonCrab == true && doneSpawning == false)
         {
-            Instantiate(crab, new Vector2(0, -82), Quaternion.identity);
-            doneSpawning = true;
+            //Instantiate(crab, new Vector2(0, -82), Quaternion.identity);
+            //doneSpawning = true;
         }
 
 
