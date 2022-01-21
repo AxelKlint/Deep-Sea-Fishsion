@@ -33,10 +33,12 @@ public class PointsPerFish : MonoBehaviour
         if (collision.transform.tag == "Large" )
         {
             Score.playscore += 8;
+
         }
         if (collision.transform.tag == "xLarge" )
         {
             Score.playscore += 10;
+
         }
     }
 }

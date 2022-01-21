@@ -29,9 +29,10 @@ public class HookMovement : MonoBehaviour
     {
         if (transform.position.y > 0)  //Om kroken kommer över Y 0 - Leo
         {
-            hasFish = false;
             Destroy(transform.GetChild(0).gameObject);
+            hasFish = false;
             SinkSpeed = 1;
+            transform.position = new Vector2(0, 0);
         }
         transform.position -= new Vector3(0, SinkSpeed, 0) * Time.deltaTime; //Kroken sjunker - Leo 
 

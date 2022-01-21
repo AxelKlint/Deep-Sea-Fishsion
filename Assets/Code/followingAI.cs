@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 /* ---------------------------------------------------------------------------------------------------------------------------------
- * Code that takes care of the simple fish AI. This will take care of basic movement along X and Y coordinates, along with fishes 
- * turning around when they reach the end of the screen. Also this code will also control the fish escape mechanism that will be used
- * when another fish gets caught.
- * Made by Alexander Dangiola who had to rewrite this code five thousand times.
+ * Code that makes the some fish follow the player if they are nearby.
  * ---------------------------------------------------------------------------------------------------------------------------------
 */
-public class basicFishAI : MonoBehaviour
+public class followingAI : MonoBehaviour
 {
     private float fishPosition;
+    private float fishPositionY;
     float movement;
     private float yMovement;
     private float speed;
@@ -20,12 +17,16 @@ public class basicFishAI : MonoBehaviour
     private float timer;
     private int rand;
     public static bool running;
+    public static float playerPosY;
+    public static float playerPosX;
     // Start is called before the first frame update
     void Start()
     {
-        speed = weightList.weight; //Gathers the weight from the Weight List so different speeds can be automated.
-        fishPosition = transform.position.x; //
+        speed = weightList.weight +0.05f; //Gathers the weight from the Weight List so different speeds can be automated.
+        fishPosition = transform.position.x; //Gets fish X coordinate.
+        fishPositionY = transform.position.y; //Gets fishs Y coordinate.
         running = false;
+
     }
 
     // Update is called once per frame
@@ -34,27 +35,25 @@ public class basicFishAI : MonoBehaviour
         timer += Time.deltaTime;
         fishPosition = GameObject.Find(gameObject.name).transform.position.x;
         transform.position += new Vector3(movement, yMovement, 0) * Time.deltaTime;
-        if (fishPosition >= 8 && HookMovement.hasFish == false)
+        playerPosY = GameObject.FindGameObjectWithTag("Player").transform.position.y;
+        playerPosX = GameObject.FindGameObjectWithTag("Player").transform.position.x;
+        if (fishPosition >= playerPosX && HookMovement.hasFish == false)
         {
-            movement = -1f - (speed / 15);
+            movement = playerPosX + (speed / 20);
             gameObject.transform.localScale = new Vector3(-1, 1, 0);
         }
-        if (fishPosition <= -8 && HookMovement.hasFish == false)
+        else if (fishPosition <= playerPosX && HookMovement.hasFish == false)
         {
-            movement = 1f + (speed / 15);
+            movement = playerPosX + (speed / 20);
             gameObject.transform.localScale = new Vector3(1, 1, 0);
         }
-        if (lastWasUp == true && timer >= 0.25f)
+        if (fishPositionY >= playerPosY && HookMovement.hasFish == false)
         {
-            yMovement = -0.3f - (speed / 20);
-            lastWasUp = false;
-            timer = 0;
+            yMovement = 0.2f + (speed / 20);
         }
-        else if (lastWasUp == false && timer >= 0.25f)
+        else if (fishPositionY <= playerPosY && HookMovement.hasFish == false)
         {
-            yMovement = 0.3f + (speed / 20);
-            lastWasUp = true;
-            timer = 0;
+            yMovement = -0.2f - (speed / 20);
         }
         if (HookMovement.hasFish == true)
         {
@@ -87,7 +86,7 @@ public class basicFishAI : MonoBehaviour
                 }
             }
         }
-        
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
