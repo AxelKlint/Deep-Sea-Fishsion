@@ -197,9 +197,10 @@ GameObject:
   - component: {fileID: 5183074332366462167}
   - component: {fileID: 5183074332366462162}
   - component: {fileID: 5183074332366462165}
+  - component: {fileID: 2939936105640497934}
   m_Layer: 0
   m_Name: Krobb
-  m_TagString: Untagged
+  m_TagString: xLarge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -290,7 +291,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Constraints: 4
 --- !u!61 &5183074332366462165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -317,3 +318,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.182458, y: 5.0311737}
   m_EdgeRadius: 0
+--- !u!114 &2939936105640497934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5183074332366462166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b7dfe7f5d7e7640b5ec1589b301933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KrrobSpeed: 3
