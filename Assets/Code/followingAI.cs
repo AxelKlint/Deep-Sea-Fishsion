@@ -39,21 +39,25 @@ public class followingAI : MonoBehaviour
         playerPosX = GameObject.FindGameObjectWithTag("Player").transform.position.x;
         if (fishPosition >= playerPosX && HookMovement.hasFish == false)
         {
-            movement = playerPosX + (speed / 20);
+            movement = playerPosX - (speed / 20) * 1.1f;
             gameObject.transform.localScale = new Vector3(-1, 1, 0);
         }
         else if (fishPosition <= playerPosX && HookMovement.hasFish == false)
         {
-            movement = playerPosX + (speed / 20);
+            movement = playerPosX + (speed / 20) * 0.9f;
             gameObject.transform.localScale = new Vector3(1, 1, 0);
         }
-        if (fishPositionY >= playerPosY && HookMovement.hasFish == false)
+        if (lastWasUp == true && timer >= 0.25f)
         {
-            yMovement = 0.2f + (speed / 20);
+            yMovement = -0.3f - (speed / 20);
+            lastWasUp = false;
+            timer = 0;
         }
-        else if (fishPositionY <= playerPosY && HookMovement.hasFish == false)
+        else if (lastWasUp == false && timer >= 0.25f)
         {
-            yMovement = -0.2f - (speed / 20);
+            yMovement = 0.3f + (speed / 20);
+            lastWasUp = true;
+            timer = 0;
         }
         if (HookMovement.hasFish == true)
         {
