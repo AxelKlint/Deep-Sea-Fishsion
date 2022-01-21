@@ -55,6 +55,7 @@ public class HookMovement : MonoBehaviour
         {
             collision.transform.parent = gameObject.transform;  //Gör fisken till en child av kroken, den slutar alltså röra sig - Leo 
             collision.gameObject.GetComponent<basicFishAI>().enabled = false;  //Stänger av fiskens rörelser - Leo
+            collision.gameObject.GetComponent<followingAI>().enabled = false;  //Stänger av fiskens rörelser - Alex
             collision.transform.localPosition = new Vector3 (0, -5.1f, 0);
             SinkSpeed = -5;  //Kroken ändrar rikting - Leo
             hasFish = true;
