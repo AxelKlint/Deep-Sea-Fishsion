@@ -15,7 +15,7 @@ public class BasicKrrob : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(KrrobSpeed, -82, 0) * Time.deltaTime;
+        transform.position -= new Vector3(KrrobSpeed, 0, 0) * Time.deltaTime;
 
     }
 
