@@ -63,12 +63,21 @@ public class basicFishAI : MonoBehaviour
                 movement = 1.2f + (speed / 15);
                 gameObject.transform.localScale = new Vector3(1, 1, 0);
                 running = true;
+                if (transform.position.x >= 15)
+                {
+                    movement = 0;
+                }
             }
             else if (transform.position.x <= 0)
             {
                 movement = -1.2f - (speed / 15);
                 gameObject.transform.localScale = new Vector3(-1, 1, 0);
                 running = true;
+                if (transform.position.x <= -15)
+                {
+                    movement = 0;
+                }
+
             }
             else if (transform.position.x == 0)
             {
