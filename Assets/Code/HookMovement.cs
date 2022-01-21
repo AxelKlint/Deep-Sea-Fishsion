@@ -31,7 +31,7 @@ public class HookMovement : MonoBehaviour
         {
             Destroy(transform.GetChild(0).gameObject);
             hasFish = false;
-            SinkSpeed = 1;
+            SinkSpeed = 2;
             transform.position = new Vector2(0, 0);
         }
         transform.position -= new Vector3(0, SinkSpeed, 0) * Time.deltaTime; //Kroken sjunker - Leo 
