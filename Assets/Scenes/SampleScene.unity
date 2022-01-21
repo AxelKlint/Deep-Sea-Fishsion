@@ -2255,7 +2255,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
       propertyPath: SinkSpeed
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3907847199153736012, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
       propertyPath: m_Name
