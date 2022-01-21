@@ -49,11 +49,11 @@ public class followingAI : MonoBehaviour
         }
         if (fishPositionY >= playerPosY && HookMovement.hasFish == false)
         {
-            yMovement = 0.2f + (speed / 20);
+            yMovement = -0.2f - (speed / 20);
         }
         else if (fishPositionY <= playerPosY && HookMovement.hasFish == false)
         {
-            yMovement = -0.2f - (speed / 20);
+            yMovement = +0.2f + (speed / 20);
         }
         if (HookMovement.hasFish == true)
         {
