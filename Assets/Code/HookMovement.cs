@@ -64,7 +64,7 @@ public class HookMovement : MonoBehaviour
                 collision.gameObject.GetComponent<followingAI>().enabled = false;  //Stänger av fiskens rörelser - Alex
 
             }
-
+                
             collision.transform.localPosition = new Vector3 (0, -5.1f, 0);
             SinkSpeed = -5;  //Kroken ändrar rikting - Leo
             hasFish = true;
@@ -72,11 +72,9 @@ public class HookMovement : MonoBehaviour
 
         if (collision.gameObject.tag == "xLarge")  //Om kroken träffar en extra stor fisk - Leo
         {
-            collision.transform.parent = gameObject.transform;  //Gör fisken till en child av kroken, den slutar alltså röra sig - Leo 
-            collision.gameObject.GetComponent<BasicKrrob>().enabled = false;  //Stänger av fiskens rörelser - Leo
-            collision.transform.localPosition = new Vector3(0, -5.1f, 0);
-            SinkSpeed = -5;  //Kroken ändrar rikting - Leo
-            hasFish = true;
+            ///Koden för krob ska vara här
+           
+            collision.gameObject.GetComponent<basicFishAI>().enabled = false;  //Stänger av fiskens rörelser - Leo
             StartCoroutine(StunHook());
         }
 
@@ -84,7 +82,6 @@ public class HookMovement : MonoBehaviour
         {
             SinkSpeed = -5;
         }
-       
     }
 
     IEnumerator StunHook()
