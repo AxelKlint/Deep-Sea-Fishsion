@@ -1401,7 +1401,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479633765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -85.5, z: 0}
+  m_LocalPosition: {x: 0.12, y: -84.76, z: 0}
   m_LocalScale: {x: 18, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2344,11 +2344,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
       propertyPath: SinkSpeed
-      value: 1
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3907847199153736012, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
       propertyPath: m_Name
       value: fiskekrok-1.png (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736012, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
