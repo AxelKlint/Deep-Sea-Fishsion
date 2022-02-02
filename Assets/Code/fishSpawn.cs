@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-/* This code is written by a stressed teenager called Alex at 2 in the morning please don't judge it too badly thanks.
+/* 
  * -------------------------------------------------------------------------------------------------------------------------------
  * With this code my goal is to create one fish spawner that spawns in fish depending on layer, which is controlled by a command that runs 
  * upon the player reaching a certain depth, one for each level. Upon said command, they should spawn in all of the fish that are coded into that
  * area. 
+ * This code is written by a stressed teenager called Alexander at 2 in the morning please don't judge it too badly thanks.
  * -------------------------------------------------------------------------------------------------------------------------------
 */
 public class fishSpawn : MonoBehaviour
