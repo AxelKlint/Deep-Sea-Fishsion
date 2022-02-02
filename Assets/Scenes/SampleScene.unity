@@ -1806,6 +1806,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Right: 275
   Left: 276
+  RightArrow: 0
+  LeftArrow: 0
+  SlowDown: 0
+  SpeedUp: 0
   MovementSpeed: 5
   SinkSpeed: 1
 --- !u!114 &149547959330346724
@@ -2343,8 +2347,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: SpeedUp
+      value: 115
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: SlowDown
+      value: 119
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: LeftArrow
+      value: 276
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
       propertyPath: SinkSpeed
-      value: 2.5
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: RightArrow
+      value: 275
       objectReference: {fileID: 0}
     - target: {fileID: 3907847199153736012, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
       propertyPath: m_Name
