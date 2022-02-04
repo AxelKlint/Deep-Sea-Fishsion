@@ -1809,7 +1809,9 @@ MonoBehaviour:
   RightArrow: 0
   LeftArrow: 0
   SlowDown: 0
+  SlowDownArrow: 0
   SpeedUp: 0
+  SpeedUpArrow: 0
   MovementSpeed: 5
   SinkSpeed: 1
 --- !u!114 &149547959330346724
@@ -2365,6 +2367,14 @@ PrefabInstance:
     - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
       propertyPath: RightArrow
       value: 275
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: SpeedUpArrow
+      value: 274
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
+      propertyPath: SlowDownArrow
+      value: 273
       objectReference: {fileID: 0}
     - target: {fileID: 3907847199153736012, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
       propertyPath: m_Name
