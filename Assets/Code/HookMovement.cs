@@ -67,7 +67,7 @@ public class HookMovement : MonoBehaviour
         {
             transform.position += new Vector3(0, 1.75f, 0) * Time.deltaTime;   //Kroken rör sig till höger med en annan knapp(pilarna) - Leo
         }
-        if (Input.GetKey(SpeedUp) || Input.GetKey(SpeedUpArrow))
+        if (Input.GetKey(SpeedUp) || Input.GetKey(SpeedUpArrow))   
         {
             transform.position -= new Vector3(0, 3, 0) * Time.deltaTime;   //Kroken rör sig till höger med en annan knapp(pilarna) - Leo
         }
