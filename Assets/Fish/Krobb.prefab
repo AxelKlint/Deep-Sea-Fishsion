@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5183074331296514751}
   - component: {fileID: 5183074331296514748}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Krrob Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 5183074331695033616}
   - component: {fileID: 340515673}
   - component: {fileID: 1951633419}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Krrob claw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 5183074332366462162}
   - component: {fileID: 5183074332366462165}
   - component: {fileID: 2939936105640497934}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Krobb
   m_TagString: xLarge
   m_Icon: {fileID: 0}

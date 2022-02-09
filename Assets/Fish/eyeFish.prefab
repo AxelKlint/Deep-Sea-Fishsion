@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8060294778163429717}
   - component: {fileID: 194137371195544091}
   - component: {fileID: 4483966382537253702}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: eyeFish
   m_TagString: Small
   m_Icon: {fileID: 0}

@@ -4,6 +4,7 @@ using UnityEngine;
 
 /* ---------------------------------------------------------------------------------------------------------------------------------
  * Code that makes the some fish follow the player if they are nearby.
+ * Made by Alexander Dangiola.
  * ---------------------------------------------------------------------------------------------------------------------------------
 */
 public class followingAI : MonoBehaviour

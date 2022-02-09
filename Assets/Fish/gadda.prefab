@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -1111112926712930012}
   - component: {fileID: 1010837574343783005}
   - component: {fileID: -8724206279162373893}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: gadda
   m_TagString: Large
   m_Icon: {fileID: 0}
