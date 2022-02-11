@@ -97,9 +97,7 @@ public class HookMovement : MonoBehaviour
         }
 
         if (collision.gameObject.tag == "xLarge")  //Om kroken träffar en extra stor fisk - Leo
-        {
-            ///Koden för krob ska vara här
-           
+        {  
             collision.gameObject.GetComponent<BasicKrrob>().enabled = false;  //Stänger av fiskens rörelser - Leo
             StartCoroutine(StunHook());
 
