@@ -17,7 +17,7 @@ public class followingAI : MonoBehaviour
     bool lastWasUp;
     private float timer;
     private int rand;
-    //public static bool running;
+    public static bool running;
     public static float playerPosY;
     public static float playerPosX;
     // Start is called before the first frame update
@@ -34,7 +34,7 @@ public class followingAI : MonoBehaviour
     void Update()
     {
 
-        /*
+        
         timer += Time.deltaTime;
         fishPosition = GameObject.Find(gameObject.name).transform.position.x;
         transform.position += new Vector3(movement, yMovement, 0) * Time.deltaTime;
@@ -49,22 +49,6 @@ public class followingAI : MonoBehaviour
         {
             movement = playerPosX + (speed / 20) * 0.9f;
             gameObject.transform.localScale = new Vector3(1, 1, 0);
-        }
-        if (playerPosY >= fishPositionY !& (playerPosY - fishPositionY) <= 5)    
-        {
-            yMovement += (playerPosY - fishPositionY);       
-        }
-        if (lastWasUp == true && timer >= 0.25f)
-        {
-            yMovement = -0.3f - (speed / 20);
-            lastWasUp = false;
-            timer = 0;
-        }
-        else if (lastWasUp == false && timer >= 0.25f)
-        {
-            yMovement = 0.3f + (speed / 20);
-            lastWasUp = true;
-            timer = 0;
         }
         if (HookMovement.hasFish == true)
         {
@@ -96,14 +80,14 @@ public class followingAI : MonoBehaviour
                     running = true;
                 }
             }
-        }*/
+        }
 
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       /* if (collision.gameObject.tag == "Small" || collision.gameObject.tag == "xSmall" || collision.gameObject.tag == "Medium" || collision.gameObject.tag == "Large" || collision.gameObject.tag == "xLarge")
+       if (collision.gameObject.tag == "Small" || collision.gameObject.tag == "xSmall" || collision.gameObject.tag == "Medium" || collision.gameObject.tag == "Large" || collision.gameObject.tag == "xLarge")
         {
             transform.position += new Vector3(0, Random.Range(-3f, 3f), 0);
-        }*/
+        }
     }
 }
