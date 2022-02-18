@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -5835180591046810537}
   - component: {fileID: 6388850029384944484}
   - component: {fileID: 7102209082962058689}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: eel
   m_TagString: Medium
   m_Icon: {fileID: 0}

@@ -2,12 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/* ---------------------------------------------------------------------------------------------------------------------------------
- * This code makes the fishes have different weights that affect how quickly they move.
- * Made by Alexander Dangiola.
- * ---------------------------------------------------------------------------------------------------------------------------------
-*/
-
 public class weightList : MonoBehaviour
 {
     [SerializeField]
