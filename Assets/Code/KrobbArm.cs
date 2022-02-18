@@ -25,9 +25,9 @@ public class KrobbArm : MonoBehaviour
 
         transform.Rotate(new Vector3(0, 0, speed));
 
-        if (transform.rotation.z >= 90 || transform.rotation.z <= -10)
-        { 
-            speed *= -1f;
+        if (transform.rotation.eulerAngles.z >= 90 || transform.rotation.eulerAngles.z <= -10)
+        {
+            speed *= -1;
         }
     }
 
