@@ -1518,7 +1518,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479633765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.12, y: -84.76, z: 0}
+  m_LocalPosition: {x: 0, y: -85.5, z: 0}
   m_LocalScale: {x: 18, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1923,12 +1923,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Right: 275
   Left: 276
-  RightArrow: 0
-  LeftArrow: 0
-  SlowDown: 0
-  SlowDownArrow: 0
-  SpeedUp: 0
-  SpeedUpArrow: 0
   MovementSpeed: 5
   SinkSpeed: 1
 --- !u!114 &149547959330346724
@@ -2466,40 +2460,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
-      propertyPath: SpeedUp
-      value: 115
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
-      propertyPath: SlowDown
-      value: 119
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
-      propertyPath: LeftArrow
-      value: 276
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
       propertyPath: SinkSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
-      propertyPath: RightArrow
-      value: 275
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
-      propertyPath: SpeedUpArrow
-      value: 274
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907847199153736011, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
-      propertyPath: SlowDownArrow
-      value: 273
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3907847199153736012, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
       propertyPath: m_Name
       value: fiskekrok-1.png (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3907847199153736012, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6bbfef4ad73aa646ab5db5410643a23, type: 3}

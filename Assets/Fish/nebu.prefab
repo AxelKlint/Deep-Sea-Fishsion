@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8713012697148888555}
   - component: {fileID: 8536949242154791536}
   - component: {fileID: 1129980029}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: nebu
   m_TagString: xSmall
   m_Icon: {fileID: 0}

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3082160970828148512}
   - component: {fileID: 666071500276031736}
   - component: {fileID: -410325426925782791}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: kalimari
   m_TagString: Small
   m_Icon: {fileID: 0}
