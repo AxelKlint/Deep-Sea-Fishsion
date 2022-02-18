@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class krrobClaw : MonoBehaviour
 {
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -16,9 +17,10 @@ public class krrobClaw : MonoBehaviour
     {
 
     }
-
+    
     void Load()
     {
+        //Laddar scene 3
         SceneManager.LoadScene(3);
     } 
 
@@ -27,8 +29,8 @@ public class krrobClaw : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
 
-
-            Invoke("Load", 2); // 
+            //Edwin
+            Invoke("Load", 2); // Gör så att "gameover" scenen väntar i 2 sek innan den börjar efter man tagen av crob - Edwin
         }
     }
 

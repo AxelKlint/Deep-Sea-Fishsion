@@ -6,10 +6,13 @@ public class BasicKrrob : MonoBehaviour
 {
     [SerializeField]
     float KrrobSpeed;
+    int HP = 3;
+    HookMovement Hooked;
+    public bool hookable;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Hooked = GetComponent <HookMovement>();
     }
 
     // Update is called once per frame
@@ -24,6 +27,15 @@ public class BasicKrrob : MonoBehaviour
         if (collision.gameObject.tag == "Wall")
         {
             KrrobSpeed *= -1;
+        }
+        if (collision.gameObject.tag == "Player")
+        {
+            HP--;
+            print("Krabbas liv: " + HP);
+        }
+        if (HP <= 0)
+        {
+            hookable = true;
         }
     }
 }
