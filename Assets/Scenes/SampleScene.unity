@@ -1637,7 +1637,7 @@ GameObject:
   - component: {fileID: 2001996541}
   - component: {fileID: 2001996540}
   m_Layer: 5
-  m_Name: Button
+  m_Name: FishyBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

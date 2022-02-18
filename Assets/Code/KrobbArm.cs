@@ -11,20 +11,9 @@ public class KrobbArm : MonoBehaviour
 
     void Update()
     {
-        /*// Bestämmer vilken riktning klon ska peka
-        Vector3 targetDirection = player.position - transform.position;
-
-        // Den roterar med framesen 
-        float singleStep = speed * Time.deltaTime;
-
-        // Gör så att den kan byta håll
-        Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, singleStep, 5.0f);
-
-        // Gör så att den kan byta håll också
-        transform.rotation = Quaternion.LookRotation(newDirection, Vector3.forward);*/
-
+        //Gör så att armen roterar visa Z-axeln.
         transform.Rotate(new Vector3(0, 0, speed));
-
+        //Gör så att armen byter håll vid två specifika Z positioner.
         if (transform.rotation.eulerAngles.z >= 90 || transform.rotation.eulerAngles.z <= -10)
         {
             speed *= -1;
