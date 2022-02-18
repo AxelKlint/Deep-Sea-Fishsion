@@ -8,6 +8,7 @@ public class BasicKrrob : MonoBehaviour
     float KrrobSpeed;
     int HP = 3;
     HookMovement Hooked;
+    public bool hookable;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,10 +31,11 @@ public class BasicKrrob : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             HP--;
+            print("Krabbas liv: " + HP);
         }
-        if (HP > 0)
+        if (HP <= 0)
         {
-            /// Gör så den dras upp av kroken - Framtida Leo
+            hookable = true;
         }
     }
 }
