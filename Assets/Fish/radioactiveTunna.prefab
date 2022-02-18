@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5244597025024107695}
   - component: {fileID: 6948271175283874504}
   - component: {fileID: -4169214700427239036}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: radioactiveTunna
   m_TagString: Large
   m_Icon: {fileID: 0}

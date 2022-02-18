@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7860145128175720603}
   - component: {fileID: 4915508396670160905}
   - component: {fileID: 142526619123801263}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: fitch
   m_TagString: xSmall
   m_Icon: {fileID: 0}

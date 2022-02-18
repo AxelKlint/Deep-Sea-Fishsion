@@ -10,24 +10,6 @@ public class HookMovement : MonoBehaviour
     [SerializeField]   //Så man kan ändra keybinds i unity, så man kan röra kroken till vänster - Leo
     KeyCode Left;
 
-    [SerializeField]   //Så man kan ändra keybinds i unity, så man kan röra kroken till höger med en annan knapp - Leo
-    KeyCode RightArrow;
-
-    [SerializeField]   //Så man kan ändra keybinds i unity, så man kan röra kroken till vänster med en annan knapp - Leo
-    KeyCode LeftArrow;
-
-    [SerializeField]   //Så man kan ändra keybinds i unity, så man kan sänka farten på kroken - Leo
-    KeyCode SlowDown;
-
-    [SerializeField]   //Så man kan ändra keybinds i unity, så man kan sänka farten på kroken med en annan knapp - Leo
-    KeyCode SlowDownArrow;
-
-    [SerializeField]   //Så man kan ändra keybinds i unity, så man kan öka farten på kroken - Leo
-    KeyCode SpeedUp;
-
-    [SerializeField]   //Så man kan ändra keybinds i unity, så man kan öka farten på kroken - Leo
-    KeyCode SpeedUpArrow;
-
     [SerializeField, Range(1, 10)]   //Så man kan bestämma hur snabbt kroken rör sig i Unity - Leo
     float MovementSpeed;
 
@@ -49,27 +31,19 @@ public class HookMovement : MonoBehaviour
         {
             Destroy(transform.GetChild(0).gameObject);
             hasFish = false;
-            SinkSpeed = 3;
+            SinkSpeed = 2;
             transform.position = new Vector2(0, 0);
         }
         transform.position -= new Vector3(0, SinkSpeed, 0) * Time.deltaTime; //Kroken sjunker - Leo 
         
 
-        if (Input.GetKey(Left) || Input.GetKey(LeftArrow))
+        if (Input.GetKey(Left))
         {
             transform.position -= new Vector3(MovementSpeed, 0, 0) * Time.deltaTime;   //Kroken rör sig till vänster - Leo
         }
-        if (Input.GetKey(Right) || Input.GetKey(RightArrow))
+        if (Input.GetKey(Right))
         {
             transform.position += new Vector3(MovementSpeed, 0, 0) * Time.deltaTime;   //Kroken rör sig till höger - Leo
-        }
-        if (Input.GetKey(SlowDown) || Input.GetKey(SlowDownArrow))
-        {
-            transform.position += new Vector3(0, 1.75f, 0) * Time.deltaTime;   //Kroken rör sig till höger med en annan knapp(pilarna) - Leo
-        }
-        if (Input.GetKey(SpeedUp) || Input.GetKey(SpeedUpArrow))   
-        {
-            transform.position -= new Vector3(0, 3, 0) * Time.deltaTime;   //Kroken rör sig till höger med en annan knapp(pilarna) - Leo
         }
     }
 
@@ -100,11 +74,8 @@ public class HookMovement : MonoBehaviour
         {
             ///Koden för krob ska vara här
            
-            collision.gameObject.GetComponent<BasicKrrob>().enabled = false;  //Stänger av fiskens rörelser - Leo
+            collision.gameObject.GetComponent<basicFishAI>().enabled = false;  //Stänger av fiskens rörelser - Leo
             StartCoroutine(StunHook());
-
-            SinkSpeed = -5;  //Kroken ändrar rikting - Leo
-            hasFish = true;
         }
 
         if (collision.gameObject.tag == "Bottom")
