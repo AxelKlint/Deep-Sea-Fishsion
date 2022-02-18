@@ -69,7 +69,7 @@ public class HookMovement : MonoBehaviour
         }
         if (Input.GetKey(SpeedUp) || Input.GetKey(SpeedUpArrow))   
         {
-            transform.position -= new Vector3(0, 3, 0) * Time.deltaTime;   //Kroken rör sig till höger med en annan knapp(pilarna) - Leo
+            transform.position -= new Vector3(0, 5, 0) * Time.deltaTime;   //Kroken rör sig till höger med en annan knapp(pilarna) - Leo
         }
     }
 
@@ -103,7 +103,7 @@ public class HookMovement : MonoBehaviour
             {
                 collision.gameObject.GetComponent<BasicKrrob>().enabled = false;  //Stänger av fiskens rörelser - Leo
                 collision.transform.parent = gameObject.transform;  //Gör fisken till en child av kroken, den slutar alltså röra sig - Leo 
-                SinkSpeed = -5;  //Kroken ändrar rikting - Leo
+                SinkSpeed = -8;  //Kroken ändrar rikting - Leo
                 hasFish = true;
             }
             else
@@ -124,6 +124,6 @@ public class HookMovement : MonoBehaviour
     {
         SinkSpeed = -8;
         yield return  new WaitForSeconds(1.5f);
-        SinkSpeed = 1;
+        SinkSpeed = 3;
     }
 }
