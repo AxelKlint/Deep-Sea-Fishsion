@@ -28,7 +28,7 @@ public class krrobClaw : MonoBehaviour
         {
 
 
-            Invoke("Load", 2); // 
+            Invoke("Load", 2); // Gör så att "gameover" scenen väntar i 2 sek innan den börjar efter man tagen av crob - Edwin
         }
     }
 
