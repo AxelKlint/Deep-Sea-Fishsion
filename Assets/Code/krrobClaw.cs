@@ -26,13 +26,10 @@ public class krrobClaw : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-
+            collision.gameObject.GetComponent<Animator>().SetTrigger("Destroy"); // Gör så att fiskekroken bryts när man träffar Krobclaw - Edwin
             Invoke("Load", 2); // Gör så att "gameover" scenen väntar i 2 sek innan den börjar efter man tagen av crob - Edwin
 
         }
-        if (collision.gameObject.tag == "Player")
-        {
-            
-        }
+        
     }
 }
