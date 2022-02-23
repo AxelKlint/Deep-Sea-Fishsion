@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /* ---------------------------------------------------------------------------------------------------------------------------------
- * Code that makes the some fish follow the player if they are nearby. 
+ * Code that makes the some fish move faster towards the player depending on distance to add some difficulty and variety to the game.
  * Made by Alexander Dangiola.
  * ---------------------------------------------------------------------------------------------------------------------------------
 */
@@ -14,7 +14,6 @@ public class followingAI : MonoBehaviour
     float movement;
     private float yMovement;
     private float speed;
-    bool lastWasUp;
     private float timer;
     private int rand;
     public static bool running;
