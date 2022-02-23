@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /* ---------------------------------------------------------------------------------------------------------------------------------
- * Code that makes the some fish follow the player if they are nearby. 
+ * Code that makes the some fish move faster towards the player depending on distance to add some difficulty and variety to the game.
  * Made by Alexander Dangiola.
  * ---------------------------------------------------------------------------------------------------------------------------------
 */
@@ -14,7 +14,6 @@ public class followingAI : MonoBehaviour
     float movement;
     private float yMovement;
     private float speed;
-    bool lastWasUp;
     private float timer;
     private int rand;
     public static bool running;
@@ -85,8 +84,8 @@ public class followingAI : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       if (collision.gameObject.tag == "Small" || collision.gameObject.tag == "xSmall" || collision.gameObject.tag == "Medium" || collision.gameObject.tag == "Large" || collision.gameObject.tag == "xLarge")
-        {
+       if (collision.gameObject.tag == "Small" || collision.gameObject.tag == "xSmall" || collision.gameObject.tag == "Medium" || collision.gameObject.tag == "Large" || collision.gameObject.tag == "xLarge" && HookMovement.hasFish == false)
+        { 
             transform.position += new Vector3(0, Random.Range(-3f, 3f), 0);
         }
     }

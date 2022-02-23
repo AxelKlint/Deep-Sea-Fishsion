@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* ---------------------------------------------------------------------------------------------------------------------------------
+ * Code that quickly lets me get all of the fishes weights, which then allows the fishes respective code to automatically decide speed.
+ * Also the sole reason this is in another code is so that it becomes less cluttered.
+ * Made by Alexander Dangiola.
+ * ---------------------------------------------------------------------------------------------------------------------------------
+*/
+
 public class weightList : MonoBehaviour
 {
     [SerializeField]
