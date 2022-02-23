@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8231464629861840954}
   - component: {fileID: 6733475587894059597}
   - component: {fileID: 6394920348507857682}
+  - component: {fileID: 1396468647948323857}
   m_Layer: 0
   m_Name: goldFish
   m_TagString: Small
@@ -160,7 +161,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6213236071695732120}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e844a7d6112c90644beec28ad8eb9672, type: 3}
   m_Name: 
@@ -177,3 +178,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87956438852d23c43833759f946a993e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1396468647948323857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6213236071695732120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fae997889dbaff4aa7a5a7b0a7f377d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xAngle: 0
+  yAngle: 0
