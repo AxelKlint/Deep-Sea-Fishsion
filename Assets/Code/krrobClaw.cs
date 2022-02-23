@@ -27,9 +27,12 @@ public class krrobClaw : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
 
-
             Invoke("Load", 2); // Gör så att "gameover" scenen väntar i 2 sek innan den börjar efter man tagen av crob - Edwin
+
+        }
+        if (collision.gameObject.tag == "Player")
+        {
+            
         }
     }
-
 }
