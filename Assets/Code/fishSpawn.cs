@@ -87,11 +87,11 @@ public class fishSpawn : MonoBehaviour
         rand = Random.Range(0, 3);
         if (rand == 1)
         {
-            xSpawn = Random.Range(-10.5f, -12);
+            xSpawn = Random.Range(-7.5f, -11);
         }
         else
         {
-            xSpawn = Random.Range(10.5f, 12);
+            xSpawn = Random.Range(7.5f, 11);
         }
         if (summonFish1 == true && doneSpawning == false)
         {

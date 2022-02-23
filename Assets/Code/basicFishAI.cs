@@ -34,12 +34,12 @@ public class basicFishAI : MonoBehaviour
         timer += Time.deltaTime;
         fishPosition = GameObject.Find(gameObject.name).transform.position.x;
         transform.position += new Vector3(movement, yMovement, 0) * Time.deltaTime;
-        if (fishPosition >= 8 && HookMovement.hasFish == false)
+        if (fishPosition >= 7.8f && HookMovement.hasFish == false)
         {
             movement = -1f - (speed / 15);
             gameObject.transform.localScale = new Vector3(-1, 1, 0);
         }
-        if (fishPosition <= -8 && HookMovement.hasFish == false)
+        if (fishPosition <= -7.8f && HookMovement.hasFish == false)
         {
             movement = 1f + (speed / 15);
             gameObject.transform.localScale = new Vector3(1, 1, 0);
