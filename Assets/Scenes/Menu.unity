@@ -2974,7 +2974,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Movement: A & D
+  m_text: 'Movement: W, A, S, D & Arrowkeys
 
 '
   m_isRightToLeft: 0
